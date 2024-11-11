@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validation Demos</title>
+</head>
+
+<body>
+  <h2>Try out a JS alert box: </h2><br>
+  <form action="" name="name_form" onsubmit="return checkName()">
+    <table>
+      <tr>
+        <td>Enter your name:</td>
+        <td>
+          <input type="text" id="name" />
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button type="submit">Submit</button></td>
+      </tr>
+    </table>
+  </form>
+
+  <h2>How about a simple HTML callout box?</h2><br>
+  <form>
+    <table>
+      <tr>
+        <td>Enter your email:</td>
+        <td>
+          <input type="email" id="email" />
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button type="submit">Submit</button></td>
+      </tr>
+    </table>
+  </form>
+
+  <h2>Now some simple text alerts!</h2><br>
+  <form action="" id="age_form" onsubmit="return checkAge()">
+    <table>
+      <tr>
+        <td>Enter your age:</td>
+        <td>
+          <input type="text" id="age" />
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button type="submit" onsubmit="checkAge()">Submit</button></td>
+      </tr>
+    </table>
+  </form>
+  <p id="age_error"></p><br>
+
+  <script src="validate.js"></script>
+</body>
+
+</html>
